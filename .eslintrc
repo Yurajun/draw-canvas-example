@@ -3,6 +3,8 @@ env:
     es6: true
     browser: true
     node: true
+plugins:
+    - pug
 rules:
     arrow-parens: [1, 'as-needed']
     arrow-spacing: [1, {before: true, after: true}]

@@ -1,0 +1,14 @@
+include ../video/video
+include ../video-controls/video-controls
+include ../canvas/canvas
+include ../canvas-controls/canvas-controls
+
+mixin sketcher()
+	+b.sketcher&attributes(attributes)
+		block
+		+e('div').draw-block
+			+video._hidden
+			+canvas
+		+e('div').options-block
+			+video-controls
+			+canvas-controls
